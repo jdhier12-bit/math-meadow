@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#563bce"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-192.png"><link rel="stylesheet" href="style.css"><title>Math Meadow</title></head><body>
+<main><header><span class="badge">✦ A little practice. A lot of discovery.</span><h1>Math Meadow <span>🌱</span></h1><p>Multiply your skills. Divide and shine.</p><div class="mascot" aria-label="Your friendly garden buddy">🌻 <span>Hi, math explorer! Let’s grow together!</span></div></header>
+<section class="stats" aria-label="Your progress"><div>⭐ Score <strong id="score">0</strong></div><div>🔥 Streak <strong id="streak">0</strong></div><div>🏆 Best <strong id="best">0</strong></div></section>
+<section class="card"><div class="controls"><label>Let's practice<select id="mode"><option value="multiply">Multiplication ×</option><option value="divide">Division ÷</option></select></label><label>Number size<select id="digits"><option value="2">2 digits</option><option value="3">3 digits</option><option value="4">4 digits</option><option value="5">5 digits</option></select></label></div><p class="hint" id="level-note"></p>
+<div class="problem" id="problem" aria-label="Math problem"></div>
+<form id="answer-form"><label class="answer-label" for="answer">What's your answer?</label><div class="answer-row"><input id="answer" type="text" inputmode="numeric" pattern="[0-9]*" autocomplete="off" placeholder="Type here" required aria-describedby="feedback"><button id="check" type="submit">Check answer ✓</button></div></form>
+<p id="feedback" role="status" aria-live="polite">You've got this! Take your time.</p>
+<div class="actions"><button class="secondary" id="help" type="button" aria-expanded="false">Show step-by-step</button><button class="secondary" id="next" type="button">New problem →</button></div>
+<section id="work" hidden aria-label="Worked solution"></section></section>
+<footer>Every try helps your brain grow. <button id="install" hidden>Install app</button><p>Your score stays on this device. No accounts. No ads.</p></footer></main><script src="app.js"></script></body></html>
